@@ -2,6 +2,7 @@ package ru.geekbrains.minimarket;
 
 
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import ru.geekbrains.minimarket.client.MinimarketService;
@@ -19,6 +20,7 @@ public class MinimarketTest extends AbstractTest {
     }
 
     @Test
+    @Disabled
     @DisplayName("Получение списка продуктов из категории Food")
     void testGetFoodCategory() throws Exception {
         Category category = service.getCategory(1);
@@ -26,6 +28,7 @@ public class MinimarketTest extends AbstractTest {
     }
 
     @Test
+    @Disabled
     @DisplayName("Получение списка продуктов из категории Electronic")
     void testGetElectronicCategory() throws Exception {
         Category category = service.getCategory(2);
@@ -33,6 +36,7 @@ public class MinimarketTest extends AbstractTest {
     }
 
     @Test
+    @Disabled
     @DisplayName("Пролучение списка всех продуктов")
     void testGetProducts() throws Exception {
         List<Product> products = service.getProducts();
@@ -40,6 +44,7 @@ public class MinimarketTest extends AbstractTest {
     }
 
     @Test
+    @Disabled
     @DisplayName("Создание продукта")
     void testPostProduct() throws Exception {
         Product product = new Product();
@@ -52,6 +57,7 @@ public class MinimarketTest extends AbstractTest {
     }
 
     @Test
+    @Disabled
     @DisplayName("Обновление информации о продукте")
     void testPutProduct() throws Exception {
         Product products = service.putProduct(350, "Cherry Juice", 30, "Food");
@@ -61,6 +67,7 @@ public class MinimarketTest extends AbstractTest {
     }
 
     @Test
+    @Disabled
     @DisplayName("Получение информации о конкретном продукте")
     void testGetProduct() throws Exception {
         Product products = service.getProduct(7);
@@ -69,6 +76,7 @@ public class MinimarketTest extends AbstractTest {
     }
 
     @Test
+    @Disabled
     @DisplayName("Удаление продукта")
     void testDeleteProduct() {
         Product productDelete = new Product();
