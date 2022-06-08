@@ -1,0 +1,6 @@
+{
+  "id": "${json-unit.ignore}",
+  "title": "Cherry Juice",
+  "price": 30,
+  "categoryTitle": "Food"
+}
